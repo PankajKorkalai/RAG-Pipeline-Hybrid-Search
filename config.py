@@ -30,6 +30,7 @@ except Exception:
 warnings.filterwarnings("ignore")
 
 from dotenv import load_dotenv
+load_dotenv()
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 
 # If not in os.environ, check Streamlit's secrets manager
